@@ -26,7 +26,6 @@ class DrawerTableViewController: UITableViewController {
                 drawerController.mainViewController = mainNavigation
                 
             case 1:
-                print("1")
                 drawerController.mainViewController = vc
             case 2:
                 drawerController.mainViewController = setting
