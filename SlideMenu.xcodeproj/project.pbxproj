@@ -14,6 +14,12 @@
 		89406DF61C0A0106003BA90D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89406DF41C0A0106003BA90D /* LaunchScreen.storyboard */; };
 		89406E011C0A0106003BA90D /* SlideMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89406E001C0A0106003BA90D /* SlideMenuTests.swift */; };
 		89406E0C1C0A0106003BA90D /* SlideMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89406E0B1C0A0106003BA90D /* SlideMenuUITests.swift */; };
+		89406E211C0A0D5F003BA90D /* DrawerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89406E201C0A0D5F003BA90D /* DrawerTableViewController.swift */; };
+		89406E231C0A110D003BA90D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89406E221C0A110D003BA90D /* HomeVC.swift */; };
+		89406E251C0A111C003BA90D /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89406E241C0A111C003BA90D /* SettingVC.swift */; };
+		897EE2041C27B190007C094F /* KYDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897EE2031C27B190007C094F /* KYDrawerController.swift */; };
+		897EE2061C27B1B4007C094F /* KYEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897EE2051C27B1B4007C094F /* KYEmbedDrawerControllerSegue.swift */; };
+		897EE2081C27B1CD007C094F /* KYEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897EE2071C27B1CD007C094F /* KYEmbedMainControllerSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		89406E071C0A0106003BA90D /* SlideMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89406E0B1C0A0106003BA90D /* SlideMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuUITests.swift; sourceTree = "<group>"; };
 		89406E0D1C0A0106003BA90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89406E201C0A0D5F003BA90D /* DrawerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerTableViewController.swift; sourceTree = "<group>"; };
+		89406E221C0A110D003BA90D /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		89406E241C0A111C003BA90D /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		897EE2031C27B190007C094F /* KYDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYDrawerController.swift; sourceTree = "<group>"; };
+		897EE2051C27B1B4007C094F /* KYEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
+		897EE2071C27B1CD007C094F /* KYEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,16 @@
 		89406DEA1C0A0106003BA90D /* SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				897EE2021C27B164007C094F /* KYDrawerController */,
 				89406DEB1C0A0106003BA90D /* AppDelegate.swift */,
 				89406DED1C0A0106003BA90D /* ViewController.swift */,
 				89406DEF1C0A0106003BA90D /* Main.storyboard */,
 				89406DF21C0A0106003BA90D /* Assets.xcassets */,
 				89406DF41C0A0106003BA90D /* LaunchScreen.storyboard */,
 				89406DF71C0A0106003BA90D /* Info.plist */,
+				89406E201C0A0D5F003BA90D /* DrawerTableViewController.swift */,
+				89406E221C0A110D003BA90D /* HomeVC.swift */,
+				89406E241C0A111C003BA90D /* SettingVC.swift */,
 			);
 			path = SlideMenu;
 			sourceTree = "<group>";
@@ -123,6 +139,16 @@
 				89406E0D1C0A0106003BA90D /* Info.plist */,
 			);
 			path = SlideMenuUITests;
+			sourceTree = "<group>";
+		};
+		897EE2021C27B164007C094F /* KYDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				897EE2031C27B190007C094F /* KYDrawerController.swift */,
+				897EE2051C27B1B4007C094F /* KYEmbedDrawerControllerSegue.swift */,
+				897EE2071C27B1CD007C094F /* KYEmbedMainControllerSegue.swift */,
+			);
+			name = KYDrawerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897EE2061C27B1B4007C094F /* KYEmbedDrawerControllerSegue.swift in Sources */,
+				897EE2081C27B1CD007C094F /* KYEmbedMainControllerSegue.swift in Sources */,
+				89406E251C0A111C003BA90D /* SettingVC.swift in Sources */,
+				89406E231C0A110D003BA90D /* HomeVC.swift in Sources */,
+				897EE2041C27B190007C094F /* KYDrawerController.swift in Sources */,
+				89406E211C0A0D5F003BA90D /* DrawerTableViewController.swift in Sources */,
 				89406DEE1C0A0106003BA90D /* ViewController.swift in Sources */,
 				89406DEC1C0A0106003BA90D /* AppDelegate.swift in Sources */,
 			);
@@ -487,6 +519,7 @@
 				89406E121C0A0106003BA90D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89406E131C0A0106003BA90D /* Build configuration list for PBXNativeTarget "SlideMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +528,7 @@
 				89406E151C0A0106003BA90D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89406E161C0A0106003BA90D /* Build configuration list for PBXNativeTarget "SlideMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +537,7 @@
 				89406E181C0A0106003BA90D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
