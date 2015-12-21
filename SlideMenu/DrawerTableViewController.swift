@@ -23,10 +23,10 @@ class DrawerTableViewController: UITableViewController {
             
             switch indexPath.row {
             case 0:
-                drawerController.mainViewController = mainNavigation
-                
+            drawerController.mainViewController = vc
             case 1:
-                drawerController.mainViewController = vc
+            drawerController.mainViewController = vc
+
             case 2:
                 drawerController.mainViewController = setting
             default:
